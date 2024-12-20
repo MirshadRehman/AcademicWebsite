@@ -1,0 +1,90 @@
+/* Container for News and Events */
+.news-event-container {
+    display: flex;
+    gap: 10px; /* Space between News and Events sections */
+    margin: 20px 0; /* Margin for spacing */
+  }
+  
+  .admission {
+    width: 20%; /* 30% width for Events */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    position: relative;
+  }
+  /* News Section */
+  .news-section {
+    width: 80%; /* 70% width for News */
+    padding: 15px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    position: relative;
+  }
+  
+  /* Events Section */
+  .events-section {
+    width: 20%; /* 30% width for Events */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Common Styles for Both Sections */
+  .news-section h2,
+  .events-section h2,
+  .admission h2 {
+    margin-top: 0;
+    color: #002147;
+  }
+  
+  .admission ul,
+  .events-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .admission li,
+  .events-section li {
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .newsdisplay{
+    
+    margin: 0;
+    animation: moveCards 10s linear infinite;
+    display: flex;
+    gap: 9px;
+  }
+
+  .newscard{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+    padding: 5px;
+    width: 300px;
+    height: 180px;
+    
+    border-radius: 5px;
+    /* background-color: #ccc; */
+  }
+  .newscard img{
+        width: 300px;
+        height: 180px;
+  }
+
+  @keyframes moveCards {
+    0% {
+      transform: translateX(100%); /* Start outside the view on the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Move outside the view on the left */
+    }
+  }

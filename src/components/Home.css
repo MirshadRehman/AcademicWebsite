@@ -1,0 +1,18 @@
+.page {
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .page h2 {
+    color: #002147;
+    margin-bottom: 15px;
+  }
+  
+  .page ul li {
+    margin-bottom: 10px;
+  }
+  
+  .page p {
+    font-size: 16px;
+  }
+  
